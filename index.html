@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Connect Wallet and Display Address Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="connect-wallet" class="connect-wallet-button">Connect Wallet</button>
+    <button id="add-member" class="connect-wallet-button">Add member</button>
+    
+    <div id="user-address" class="user-address"></div>
+    <div id="member-info" class="member-info"></div>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="connect-wallet.js"></script>
+    <script src="add-member.js"></script>
+    <script src="link-discord.js"></script>
+    <script src="proposal.js"></script>
+    <script src="create-proposal.js"></script>
+    <h2>Link Discord ID</h2>
+    <form>
+        <label for="discord-id">Discord ID:</label>
+        <input type="text" id="discord-id" name="discord-id" required>
+        <br>
+        <button type="button" onclick="linkDiscordId()" class="connect-wallet-button">Link</button>
+    </form>
+    <h2> Create Proposal</h2>
+    <form>
+        <label for="description-id">Description</label>
+        <input type="text" id="description-id" name="description-id" required>
+        <br>
+        <button type="button" onclick="createProposal()" class="connect-wallet-button">Create</button>
+    </form>
+    <h2> List Proposal</h2>
+    <div id="proposals-container"></div>
+   
+
+</body>
+</html>
